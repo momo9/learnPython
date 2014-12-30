@@ -24,3 +24,10 @@ with open('test.json') as fd:
 
 for k, v in o.items():
     print '%s: %s' % (k, v)
+
+s = json.dumps(obj)
+print s
+
+o = json.loads(s)
+for k, v in o.items():
+    print '%s: %s' % (k, v)
